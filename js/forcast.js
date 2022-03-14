@@ -11,4 +11,4 @@ const getCity =  async (city) =>{
 };
 
 
-getCity("tehran")
+getCity("tehran");
