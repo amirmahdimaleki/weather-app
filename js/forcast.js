@@ -1,5 +1,14 @@
 const key = 'nbpPNlkAi6yQnSnHdL6VKQd7F6eWTLcE'
+// * weather getter func
+const getWeather = async (id) => {
 
+  const base = "http://dataservice.accuweather.com/currentconditions/v1/"
+  const query = `${id}?apikey=${key} `
+
+}
+
+
+// * city getter func
 const getCity =  async (city) =>{
 
     const base = 'http://dataservice.accuweather.com/locations/v1/cities/search'
