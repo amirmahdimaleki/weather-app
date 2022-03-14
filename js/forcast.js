@@ -23,7 +23,7 @@ const getCity =  async (city) =>{
     return data[0];
 };
 
-
+// * data getting
 getCity( "manchester" ).then( data => {
     return getWeather( data.Key );
 }).then( data => {
