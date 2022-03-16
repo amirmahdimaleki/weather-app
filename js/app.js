@@ -1,21 +1,20 @@
 const cityForm = document.querySelector('form');
+ const card  = document.querySelector('.card');
+ const details = document.querySelector('.details')
 
 const updateCity = async (city)=>{
     // console.log(city)
     const cityDets = await getCity(city);
-    const weather = await getWeather(cityDets);
-
-    return {
-        cityDets: cityDets,
-        weather: weather
-    };
+    const weather = await getWeather(cityDets.Key);
+    
+    return { cityDets , weather};
 };
 
 cityForm.addEventListener('submit', e =>{
     e.preventDefault();
     
     // get cityValue
-    const city = cityForm.city.trim();
+    const city = cityForm.city.value.trim();
     cityForm.reset();
 
     // update the ui with new city
