@@ -12,7 +12,7 @@ details.innerHTML = `
 <h5 class="my-3">${cityDets.EnglishName}</h5>
 <div class="my=3">${weather.WeatherText}</div>
 <div class="display-4 my-4">
-  <span>${weather.Temperature.Metric}</span>
+  <span>${weather.Temperature.Metric.Value}</span>
   <span>&deg;C</span>
 </div>
 `
@@ -38,4 +38,4 @@ cityForm.addEventListener('submit', e =>{
     updateCity(city)
     .then(data => updateUI(data))
     .catch(err => console.log(err));
-}
+});
