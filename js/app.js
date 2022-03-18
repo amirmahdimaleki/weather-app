@@ -28,7 +28,7 @@ if(weather.IsDayTime){
 }else{
   timeSrc = "img/night.svg "
 }
-
+time.setAttribute('src', timeSrc)
 
 // remove the d-none class if present
   if(card.classList.contains('d-none')){
