@@ -17,21 +17,21 @@ const updateUI = (data) => {
             <span>${weather.Temperature.Metric.Value}</span>
             <span>&deg;C</span>
           </div>
-`;
+ `;
 
 
 // * update the day/night icon img
-const iconSrc = `img/icons/${weather.WeatherIcon}.svg`;
-icon.setAttribute('src', iconSrc)
+  const iconSrc = `img/icons/${weather.WeatherIcon}.svg`;
+    icon.setAttribute('src', iconSrc)
 
-let timeSrc = weather.IsDayTime ? "img/day.svg" : "img/night.svg" ;
+    let timeSrc = weather.IsDayTime ? "img/day.svg" : "img/night.svg" ;
 
-time.setAttribute('src', timeSrc)
+    time.setAttribute('src', timeSrc)
 
-// remove the d-none class if present
-  if(card.classList.contains('d-none')){
-    card.classList.remove('d-none')
-  }
+  // remove the d-none class if present
+    if(card.classList.contains('d-none')){
+      card.classList.remove('d-none')
+    }
 };
 
 const updateCity = async (city) => {
@@ -42,7 +42,7 @@ const updateCity = async (city) => {
 };
 
 cityForm.addEventListener("submit", (e) => {
-  // prevent defult action
+  // prevent default action
   e.preventDefault();
 
   //  get city value
