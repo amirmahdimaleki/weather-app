@@ -21,12 +21,14 @@ const updateUI = (data) => {
 
 
 // * update the day/night icon img
+const iconSrc = `img/icon/${weather.WeatherIcon}.svg`;
+icon.setAttribute('src', iconSrc)
 
-let timeSrc = null ;
+let timeSrc = null;
 if(weather.IsDayTime){
-  time.Src = "img/day.svg"
+  timeSrc = "img/day.svg"
 }else{
-  timeSrc = "img/night.svg "
+  timeSrc = "img/night.svg"
 }
 time.setAttribute('src', timeSrc)
 
