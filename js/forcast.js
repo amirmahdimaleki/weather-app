@@ -10,7 +10,7 @@ const getWeather = async (id) => {
   return data[0];
 };
 
-// get city information
+// * city information getter
 const getCity = async (city) => {
   const base = "http://dataservice.accuweather.com/locations/v1/cities/search";
 
