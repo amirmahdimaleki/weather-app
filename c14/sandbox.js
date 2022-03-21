@@ -24,4 +24,4 @@ localStorage.setItem('age', 18)
 name1 = localStorage.getItem('name1')
 age = localStorage.getItem('age')
 
-console.log()
+console.log(name1, age)
