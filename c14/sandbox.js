@@ -19,5 +19,9 @@ console.log(name1, age)
 // ? we update data by using setItem and overwriting it
 
 localStorage.setItem('name1', 'amirmahdi')
+localStorage.setItem('age', 18)
 
 name1 = localStorage.getItem('name1')
+age = localStorage.getItem('age')
+
+console.log()
