@@ -25,3 +25,17 @@ name1 = localStorage.getItem('name1')
 age = localStorage.getItem('age')
 
 console.log(name1, age)
+
+
+// deleting item from local storage
+localStorage.removeItem('name1')
+name1 = localStorage.getItem('name1')
+console.log(name1) // => null
+
+//  deleting all items from local storage
+localStorage.clear()
+
+name1 = localStorage.getItem('name1')
+age = localStorage.getItem('age')
+
+console.log(name1, age) // => null null
