@@ -39,3 +39,24 @@ name1 = localStorage.getItem('name1')
 age = localStorage.getItem('age')
 
 console.log(name1, age) // => null null
+// ========================================================================
+
+
+// ? line 8 so :
+// ? to stringify complex data's like array of objects :
+
+const todo = [
+    {txt: "hello", author: "mammad" },
+    {txt: "bye", author: "shaban" },
+    {txt: "holy crab", author: "gholam" }
+]
+
+//   console.log(JSON.stringify(todo))
+    //=> e.g: txt> "txt" (in json files is like that)
+
+    // ? store the data
+
+    localStorage.setItem('todo', JSON.stringify(todo))
+
+    const stored = localStorage.getItem('todo')
+    console.log(JSON.pars(stored));
