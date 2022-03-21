@@ -59,4 +59,5 @@ const todo = [
     localStorage.setItem('todo', JSON.stringify(todo))
 
     const stored = localStorage.getItem('todo')
-    console.log(JSON.pars(stored));
+    console.log(JSON.parse(stored)); //=> if without json parse it would be json but with it its an array of objects like todo
+    
